@@ -19,10 +19,10 @@ const handleCurrYear = () => {
 	footerYear.innerText = year;
 };
 
-$(".portfolio-item").isotope({
-	itemSelector: ".item",
-	layoutMode: "fitRows",
-});
+// $(".portfolio-item").isotope({
+// 	itemSelector: ".item",
+// 	layoutMode: "fitRows",
+// });
 
 $(".portfolio-menu ul li").click(function () {
 	$(".portfolio-menu ul li").removeClass("active");

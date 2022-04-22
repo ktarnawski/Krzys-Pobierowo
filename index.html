@@ -11,12 +11,11 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="dist/css/hamburgers.min.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="dist/css/style.min.css">
 <script src="https://kit.fontawesome.com/a6efb6f335.js" crossorigin="anonymous"></script>
@@ -27,7 +26,7 @@
     <nav class="nav">
     <div class="wrapper">
         <div class="nav-bar">
-            <a href="#home" class="nav__logo"><img src="dist/img/logo.svg" alt="logo"></a>
+            <a href="index.html#home" class="nav__logo"><img src="dist/img/logo.svg" alt="logo"></a>
             <button class="hamburger hamburger--vortex" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -56,7 +55,7 @@
                         class="header__btn">Sprawdź
                         ofertę</button></a>
             </div>
-            <a href="#oferta"><i class="fa-solid fa-arrow-down bounce-top"></i></a>
+            <a class="header__arrow" href="#oferta"><img src="../dist/img/chevrons-down.svg" alt=""></a>
         </div>
     </header>
 
@@ -77,7 +76,9 @@
                         </div>
                         <div class="offer__card-info offer__card-info--first">
                             <h3 class="offer__card-info-title">Domki</h3>
-                            <button class="offer__card-info-btn">Więcej informacji</button>
+                            <a href="domki.html">
+                                <button class="offer__card-info-btn">Więcej informacji</button>
+                            </a>
                         </div>
                     </div>
                     <div class="offer__card" onclick="void(0)">
@@ -87,17 +88,9 @@
                         </div>
                         <div class="offer__card-info offer__card-info--second">
                             <h3 class="offer__card-info-title">Pokoje</h3>
-                            <button class="offer__card-info-btn">Więcej informacji</button>
-                        </div>
-                    </div>
-                    <div class="offer__card" onclick="void(0)">
-                        <div class="offer__card-img offer__card-img--third">
-                            <h3 class="offer__card-img-title">Przyczepy</h3>
-                            <p class="offer__card-img-info">Sprawdź</p>
-                        </div>
-                        <div class="offer__card-info offer__card-info--third">
-                            <h3 class="offer__card-info-title">Przyczepy</h3>
-                            <button class="offer__card-info-btn">Więcej informacji</button>
+                            <a href="pokoje.html">
+                                <button class="offer__card-info-btn">Więcej informacji</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -240,12 +233,12 @@
                     </div>
                 </div>
             </div>
-            <img class="bg-icon bg-icon-third" src="../dist/img/sun.svg" alt="" draggable="false">
         </section>
 
         <section id="regulamin" class="rules">
             <h2 class="section-title">regulamin</h2>
             <div class="underline"></div>
+            <img class="bg-icon bg-icon-third" src="../dist/img/sun.svg" alt="" draggable="false">
             <div class="wrapper">
                 <p class="rules__text section-text">Witamy Państwa serdecznie w naszych domkach Krzyś i życzymy miłego
                     pobytu.
@@ -353,12 +346,6 @@
         once: true
     });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
 <script src="dist/js/main.min.js"></script>
 </body>
