@@ -1,0 +1,78 @@
+@media screen and (min-width: 768px) {
+	.col-md-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+
+	.bg-icon {
+		display: block;
+	}
+
+	.header {
+		h1 {
+			font-size: 6rem;
+		}
+
+		&__hero-img {
+			background-image: url("../img/header_1280.jpg");
+		}
+	}
+
+	.main {
+		.offer {
+			&__cards {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			&__card {
+				margin: 1rem;
+				width: 45%;
+			}
+		}
+
+		.info {
+			&__card {
+				&-box-text {
+					padding: 2rem;
+				}
+			}
+		}
+
+		.attractions {
+			&__container {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			&__text {
+				justify-content: space-around;
+			}
+
+			&__img-box {
+				justify-content: flex-start;
+			}
+		}
+
+		.contact {
+			&__box {
+				flex-direction: row;
+			}
+
+			&__info {
+				justify-content: center;
+				width: 40%;
+				max-width: 350px;
+				margin: 4rem 2rem;
+			}
+
+			&__form {
+				width: 60%;
+				margin-left: 2rem;
+				margin-bottom: 2rem;
+				margin-top: 1rem;
+			}
+		}
+	}
+}

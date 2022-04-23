@@ -1,0 +1,65 @@
+@media (min-width: 1200px) {
+	.bg-icon {
+		&-first {
+			bottom: -40%;
+		}
+
+		&-third {
+			bottom: -15%;
+		}
+	}
+
+	.section-text {
+		font-size: s.$l;
+		font-weight: 500;
+	}
+
+	.header {
+		h1 {
+			font-size: 8rem;
+		}
+
+		p {
+			font-size: s.$l;
+		}
+
+		&__hero-img {
+			background-image: url("../img/header_1920.jpg");
+		}
+	}
+
+	.main {
+		.offer {
+			&__card {
+				width: 30%;
+			}
+		}
+
+		.info {
+			&__card {
+				&-title {
+					font-size: s.$xl;
+				}
+
+				&-text {
+					font-size: s.$m;
+				}
+			}
+		}
+
+		.attractions {
+			&__img-box {
+				padding-left: 6rem;
+			}
+		}
+	}
+
+	.subpage__header {
+		&-block {
+			&-item {
+				width: 25%;
+				flex: 0 1 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+@media screen and (min-width: 992px) {
+	.col-lg-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.section-title {
+		font-size: 4rem;
+	}
+
+	.nav {
+		.nav-bar {
+			flex-wrap: nowrap;
+		}
+
+		&__links {
+			position: static;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			width: auto;
+			transform: translateY(0);
+			opacity: 1;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+
+		.hamburger {
+			display: none;
+		}
+	}
+
+	.header {
+		h1 {
+			font-size: 7rem;
+		}
+	}
+
+	.main {
+		.contact__image {
+			background-image: url("../img/contact_family_1920.jpg");
+		}
+	}
+}

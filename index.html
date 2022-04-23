@@ -6,42 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link href="dist/css/hamburgers.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="dist/css/hamburgers.min.css" rel="stylesheet">
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+        id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
-<link rel="stylesheet" href="dist/css/style.min.css">
-<script src="https://kit.fontawesome.com/a6efb6f335.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <script src="https://kit.fontawesome.com/a6efb6f335.js" crossorigin="anonymous"></script>
     <title>Krzyś | Noclegi w Pobierowie</title>
 </head>
 
 <body>
     <nav class="nav">
-    <div class="wrapper">
-        <div class="nav-bar">
-            <a href="index.html#home" class="nav__logo"><img src="dist/img/logo.svg" alt="logo"></a>
-            <button class="hamburger hamburger--vortex" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <ul class="nav__links">
-                <li><a href="index.html#oferta" class="nav__item">oferta</a></li>
-                <li><a href="index.html#o-nas" class="nav__item">o nas</a></li>
-                <li><a href="index.html#atrakcje" class="nav__item">atrakcje</a></li>
-                <li><a href="domki.html" class="nav__item">domki</a></li>
-                <li><a href="pokoje.html" class="nav__item">pokoje</a></li>
-                <li><a href="index.html#regulamin" class="nav__item">regulamin</a></li>
-                <li><a href="index.html#kontakt" class="nav__item">kontakt</a></li>
-            </ul>
+        <div class="wrapper">
+            <div class="nav-bar">
+                <a href="index.html#home" class="nav__logo"><img src="dist/img/logo.svg" alt="logo"></a>
+                <button class="hamburger hamburger--vortex" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <ul class="nav__links">
+                    <li><a href="index.html#oferta" class="nav__item">oferta</a></li>
+                    <li><a href="index.html#o-nas" class="nav__item">o nas</a></li>
+                    <li><a href="index.html#atrakcje" class="nav__item">atrakcje</a></li>
+                    <li><a href="domki.html" class="nav__item">domki</a></li>
+                    <li><a href="pokoje.html" class="nav__item">pokoje</a></li>
+                    <li><a href="index.html#regulamin" class="nav__item">regulamin</a></li>
+                    <li><a href="index.html#kontakt" class="nav__item">kontakt</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="header" id="home">
         <div class="header__hero-img">
@@ -49,11 +54,10 @@
             <div class="header__hero-text">
                 <h1 data-aos="fade-left" data-aos-delay="200">Krzyś Pobierowo</h1>
                 <p data-aos="fade-left" data-aos-delay="400">komfortowe domki i pokoje nad morzem</p>
-                <a data-aos="fade-left" data-aos-delay="600" href="#oferta" class="header__link"><button
-                        class="header__btn">Sprawdź
-                        ofertę</button></a>
             </div>
-            <a class="header__arrow" href="#oferta"><img src="dist/img/chevrons-down.svg" alt=""></a>
+            <a data-aos="fade-left" data-aos-delay="600" class="header__link" href="#oferta">
+                <button class="animated-btn">Sprawdź ofertę</button>
+            </a>
         </div>
     </header>
 
@@ -75,7 +79,7 @@
                         <div class="offer__card-info offer__card-info--first">
                             <h3 class="offer__card-info-title">Domki</h3>
                             <a href="domki.html">
-                                <button class="offer__card-info-btn">Więcej informacji</button>
+                                <button class="offer__card-info-btn animated-btn">Więcej informacji</button>
                             </a>
                         </div>
                     </div>
@@ -87,7 +91,7 @@
                         <div class="offer__card-info offer__card-info--second">
                             <h3 class="offer__card-info-title">Pokoje</h3>
                             <a href="pokoje.html">
-                                <button class="offer__card-info-btn">Więcej informacji</button>
+                                <button class="offer__card-info-btn animated-btn">Więcej informacji</button>
                             </a>
                         </div>
                     </div>
@@ -304,7 +308,7 @@
                         </div>
                         <textarea class="contact__form-input contact__form-textarea" id="msg"
                             placeholder="Wiadomość"></textarea>
-                        <button type="submit" class="contact__form-btn">Wyślij</button>
+                        <button type="submit" class="contact__form-btn animated-btn">Wyślij</button>
                         <div class="contact__form-item">
                             <p>Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych
                                 osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych
@@ -330,21 +334,21 @@
     </main>
 
     <footer class="footer">
-    <div class="wrapper">
-        <p class="footer__text">Copyright &copy; <span class="footer__year"></span> Krzyś Pobierowo</p>
-    </div>
-</footer>
+        <div class="wrapper">
+            <p class="footer__text">Copyright &copy; <span class="footer__year"></span> Krzyś Pobierowo</p>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        offset: 200,
-        once: true
-    });
-</script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+        });
+    </script>
 
-<script src="dist/js/main.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>

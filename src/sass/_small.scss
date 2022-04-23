@@ -1,0 +1,95 @@
+@media screen and (min-width: 576px) {
+	.col-md-4 {
+		flex: 0 0 50%;
+	}
+
+	.header {
+		h1 {
+			font-size: 4rem;
+		}
+	}
+
+	.main {
+		.info {
+			&__card {
+				flex-direction: row;
+				margin: 0;
+
+				&-img {
+					margin: 0;
+					height: 100%;
+				}
+
+				&-box-img {
+					width: 50%;
+
+					img {
+						border-radius: 8px 0 0 8px;
+					}
+
+					&--right {
+						order: 1;
+
+						img {
+							border-radius: 0 8px 8px 0;
+						}
+					}
+				}
+
+				&-box-text {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 50%;
+					padding: 1rem;
+
+					&--right {
+						text-align: right;
+					}
+				}
+			}
+		}
+
+		.attractions {
+			&__title {
+				padding-bottom: 1rem;
+			}
+
+			&__list-title {
+				margin-top: 1rem;
+			}
+
+			&__list {
+				li {
+					font-size: s.$m;
+				}
+			}
+
+			&__text {
+				p {
+					font-size: s.$m;
+				}
+			}
+
+			&__img-box {
+				padding-left: 1rem;
+			}
+		}
+
+		.contact__image {
+			background-image: url("../img/contact_family_1280.jpg");
+		}
+	}
+
+	.subpage__header {
+		&-block {
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&-item {
+				flex: 50%;
+				width: 100%;
+			}
+		}
+	}
+}

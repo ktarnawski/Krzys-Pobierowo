@@ -35,7 +35,7 @@ $(".portfolio-menu ul li").click(function () {
 	return false;
 });
 
-$(document).ready(function () {
+$(document).ready(function ($) {
 	const popup_btn = $(".popup-btn");
 	popup_btn.magnificPopup({
 		type: "image",
