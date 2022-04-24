@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Szukasz noclegu w Pobierowie? Zapraszamy na rodzinny wypoczynek w Domkach Krzyś! Cisza, spokój, bezpieczeństwo oraz atrakcyjne ceny.">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
     <!-- @include "headlinks.kit" -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Krzyś | Noclegi w Pobierowie</title>
     <link rel="icon" type="image/png" href="dist/img/favicon_sun.png">
     <link rel="apple-touch-icon" href="dist/img/apple-touch-icon.png" />
@@ -268,15 +271,25 @@
                         </div>
                     </div>
                     <div class="contact__form">
-                        <div class="contact__form-top">
-                            <input type="text" class="contact__form-input" id="name" placeholder="Imię">
-                            <input type="text" class="contact__form-input" id="surname" placeholder="Nazwisko">
-                            <input type="email" class="contact__form-input" id="email" placeholder="Email">
-                            <input type="tel" class="contact__form-input" id="phone" placeholder="Telefon">
-                        </div>
-                        <textarea class="contact__form-input contact__form-textarea" id="msg"
-                            placeholder="Wiadomość"></textarea>
-                        <button type="submit" class="contact__form-btn animated-btn">Wyślij</button>
+                        <form action="mailer.php" method="POST">
+                            <div class="contact__form-top">
+                                <input type="text" class="contact__form-input" name="name" id="name"
+                                    placeholder="Imię (wymagane)" required>
+                                <input type="text" class="contact__form-input" name="surname" id="surname"
+                                    placeholder="Nazwisko">
+                                <input type="email" class="contact__form-input" name="email" id="email"
+                                    placeholder="Email (wymagane)" required>
+                                <input type="tel" class="contact__form-input" name="phone" id="phone"
+                                    placeholder="Telefon">
+                            </div>
+                            <textarea class="contact__form-input contact__form-textarea" name="msg" id="msg"
+                                placeholder="Wiadomość (wymagane)" maxlength="255" required></textarea>
+                            <div class="contact__buttons">
+                                <div class="g-recaptcha" data-sitekey="6LeT85gfAAAAAKrHA0HFTvhbxkaBOCrh9zBuK8Ma"></div>
+                                <button type="submit" name="submit"
+                                    class="contact__form-btn animated-btn">Wyślij</button>
+                            </div>
+                        </form>
                         <div class="contact__form-item">
                             <p>Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych
                                 osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych

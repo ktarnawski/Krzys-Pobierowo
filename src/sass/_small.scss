@@ -76,6 +76,20 @@
 			}
 		}
 
+		.contact {
+			&__form {
+				&-btn {
+					align-self: flex-end;
+					margin: 2rem 0;
+				}
+			}
+
+			&__buttons {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
 		.contact__image {
 			background-image: url("../img/contact_family_1280.jpg");
 		}

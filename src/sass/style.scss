@@ -598,6 +598,14 @@ section {
 			}
 
 			&-input {
+				&:invalid {
+					border: 2px solid red;
+				}
+
+				&:valid {
+					border: 2px solid green;
+				}
+
 				background-color: colors.$secondary-color;
 				border-width: 0 0 1px 0;
 				border-radius: 8px;
@@ -613,13 +621,19 @@ section {
 			}
 
 			&-btn {
-				align-self: flex-end;
+				align-self: center;
 				width: 100%;
 				max-width: 150px;
 
 				font-size: s.$m;
 				margin: 2rem 0;
 			}
+		}
+
+		&__buttons {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 	}
 
