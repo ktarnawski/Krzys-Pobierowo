@@ -94,35 +94,37 @@ const allChecks = () => {
 	return checkErrors();
 };
 
-contactForm.addEventListener("submit", function (event) {
-	event.preventDefault();
-
-	if (!allChecks()) {
-		return false;
-	}
-
-	let dataString = $(this).serialize();
-
-	$.ajax({
-		type: $(this).attr("method"),
-		url: $(this).attr("action"),
-		data: dataString,
-		success: function () {
-			popup.firstElementChild.textContent = "Zapytanie zostało wysłane!";
-			popup.classList.add("pop-up-show");
-		},
-		error: function (request, status, error) {
-			popup.firstElementChild.textContent = "Wystąpił błąd w trakcie wysyłania";
-			popup.classList.add("pop-up-show");
-		},
+if (contactForm) {
+	contactForm.addEventListener("submit", function (event) {
+		event.preventDefault();
+		if (!allChecks()) {
+			return false;
+		}
+		let dataString = $(this).serialize();
+		$.ajax({
+			type: $(this).attr("method"),
+			url: $(this).attr("action"),
+			data: dataString,
+			success: function () {
+				popup.firstElementChild.textContent = "Zapytanie zostało wysłane!";
+				popup.classList.add("pop-up-show");
+			},
+			error: function (request, status, error) {
+				popup.firstElementChild.textContent =
+					"Wystąpił błąd w trakcie wysyłania";
+				popup.classList.add("pop-up-show");
+			},
+		});
 	});
-});
+}
 
-closeBtn.addEventListener("click", (e) => {
-	e.preventDefault();
-	popup.classList.remove("pop-up-show");
-	contactForm.reset();
-});
+if (closeBtn) {
+	closeBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		popup.classList.remove("pop-up-show");
+		contactForm.reset();
+	});
+}
 
 const handleBurger = () => {
 	burgerBtn.classList.toggle("is-active");
