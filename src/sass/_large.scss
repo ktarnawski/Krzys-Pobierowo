@@ -37,6 +37,21 @@
 	}
 
 	.main {
+		.contact {
+			&__form {
+				.pop-up {
+					width: 35%;
+
+					p {
+						font-size: 1.5rem;
+					}
+
+					.animated-btn {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
 		.contact__image {
 			background-image: url("../img/contact_family_1920.jpg");
 		}

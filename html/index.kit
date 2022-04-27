@@ -271,23 +271,42 @@
                         </div>
                     </div>
                     <div class="contact__form">
-                        <form action="mailer.php" method="POST">
+                        <form class="form_html" action="mailer.php" method="POST" name="contactForm">
                             <div class="contact__form-top">
-                                <input type="text" class="contact__form-input" name="name" id="name"
-                                    placeholder="Imię (wymagane)" required>
-                                <input type="text" class="contact__form-input" name="surname" id="surname"
-                                    placeholder="Nazwisko">
-                                <input type="email" class="contact__form-input" name="email" id="email"
-                                    placeholder="Email (wymagane)" required>
-                                <input type="tel" class="contact__form-input" name="phone" id="phone"
-                                    placeholder="Telefon">
+                                <div class="contact__form-box">
+                                    <input type="text" class="contact__form-input" name="Imię" id="name"
+                                        placeholder="Imię (wymagane)">
+                                    <p class="error-text">error</p>
+                                </div>
+                                <div class="contact__form-box">
+                                    <input type="email" class="contact__form-input" name="Email" id="email"
+                                        placeholder="Email (wymagane)">
+                                    <p class="error-text">error</p>
+                                </div>
+                                <div class="contact__form-box">
+                                    <input type="tel" class="contact__form-input" name="Telefon" id="phone"
+                                        placeholder="Telefon">
+                                    <p class="error-text">error</p>
+                                </div>
                             </div>
-                            <textarea class="contact__form-input contact__form-textarea" name="msg" id="msg"
-                                placeholder="Wiadomość (wymagane)" maxlength="255" required></textarea>
+                            <div class="contact__form-box">
+                                <textarea class="contact__form-input contact__form-textarea" name="Wiadomość" id="msg"
+                                    placeholder="Wiadomość (wymagane)" maxlength="255"></textarea>
+                                <p class="error-text">error</p>
+                            </div>
                             <div class="contact__buttons">
-                                <div class="g-recaptcha" data-sitekey="6LeT85gfAAAAAKrHA0HFTvhbxkaBOCrh9zBuK8Ma"></div>
+                                <div>
+                                    <div class="g-recaptcha" data-sitekey="6LeT85gfAAAAAKrHA0HFTvhbxkaBOCrh9zBuK8Ma">
+                                    </div>
+                                    <p class="captcha-error-text error-text">error</p>
+                                </div>
                                 <button type="submit" name="submit"
                                     class="contact__form-btn animated-btn">Wyślij</button>
+                            </div>
+
+                            <div class="pop-up">
+                                <p>Zapytanie zostało wysłane!</p>
+                                <button class="close-btn animated-btn">Zamknij</button>
                             </div>
                         </form>
                         <div class="contact__form-item">

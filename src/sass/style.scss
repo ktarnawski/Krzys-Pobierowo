@@ -586,6 +586,21 @@ section {
 				flex-direction: column;
 			}
 
+			&-box {
+				margin-bottom: 0.5rem;
+			}
+
+			&-box.error-active {
+				input,
+				textarea {
+					border: 2px solid tomato;
+				}
+
+				p {
+					visibility: visible;
+				}
+			}
+
 			&-item {
 				background-color: colors.$main-color;
 				text-align: center;
@@ -598,19 +613,12 @@ section {
 			}
 
 			&-input {
-				&:invalid {
-					border: 2px solid red;
-				}
-
-				&:valid {
-					border: 2px solid green;
-				}
-
 				background-color: colors.$secondary-color;
-				border-width: 0 0 1px 0;
+				border: 2px solid colors.$secondary-color;
+				// border-width: 0 0 1px 0;
 				border-radius: 8px;
 				padding: 0.5rem 1rem;
-				margin: 1rem 0;
+				margin: 0.5rem 0;
 				width: 100%;
 			}
 
@@ -627,6 +635,50 @@ section {
 
 				font-size: s.$m;
 				margin: 2rem 0;
+			}
+
+			.error-text {
+				margin: 0;
+				margin-left: 1rem;
+				color: tomato;
+				visibility: hidden;
+			}
+
+			.pop-up {
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 50%;
+				height: 9%;
+				top: -300px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: colors.$secondary-color;
+				border-radius: 8px;
+				border: 2px solid black;
+				transition: top 0.5s;
+
+				p {
+					padding: 1rem;
+				}
+
+				.animated-btn {
+					font-size: 1rem;
+				}
+			}
+
+			.pop-up-show {
+				top: 200px;
+			}
+		}
+
+		&__buttons {
+			div {
+				p.error-active {
+					visibility: visible !important;
+				}
 			}
 		}
 
