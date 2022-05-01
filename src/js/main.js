@@ -110,8 +110,7 @@ if (contactForm) {
 				popup.classList.add("pop-up-show");
 			},
 			error: function (request, status, error) {
-				popup.firstElementChild.textContent =
-					"Wystąpił błąd w trakcie wysyłania";
+				popup.firstElementChild.textContent = `Wystąpił błąd w trakcie wysyłania: ${request.status}`;
 				popup.classList.add("pop-up-show");
 			},
 		});
